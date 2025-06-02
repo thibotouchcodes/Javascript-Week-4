@@ -6,10 +6,23 @@
         <body>
             <h1 id="heading1"></h1>
             <p id="paragraph1"></p>
+            <p id="paragraph2"></p>
 
             <script>
-                document.getElementById("heading1").innerHTML = ("This is Javascript");
-                document.getElementById("paragraph1").innerHTML = ("I'm having fun");
+                var text1;
+                var text2;
+                var text3;
+
+                var numbA = 7;
+                var numbB = 10;
+
+                text1 = "Hello everyone on planet Earth"
+                text2 = "Learning JS is fun"
+                text3 = ", we will be masters of it in 5 weeks"
+
+                document.getElementById("heading1").innerHTML = (text1);
+                document.getElementById("paragraph1").innerHTML = (text2 + text3);
+                document.getElementById("paragraph2").innerHTML = (numbA + " x " + numbB + " = " + numbA * numbB)
             </script>
         </body>
 </html>
