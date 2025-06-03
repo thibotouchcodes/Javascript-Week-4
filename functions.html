@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link ref="stylesheet" type="text/css" href="style.css">
+    </head>
+        <body>
+            <h1 id="heading" onclick="changetext()">JavaScript</h1>
+            <p id="addition"></p>
+            <p id="subtraction"></p>
+            <p id="multiplication"></p>
+            <p id="division"></p>
+
+            <script>
+                addnumbers (23,27);
+                subtractnumbers (100, 90);
+                multiplynumbers (3, 2);
+                dividenumbers (1000, 4);
+
+            function changetext() {
+                if(document.getElementById("heading").innerHTML=='JavaScript'){
+                    document.getElementById("heading").innerHTML='is awesome'
+                } else{
+                    document.getElementById("heading").innerHTML='JavaScript'
+                }
+            }
+
+            function addnumbers(num1, num2){
+                document.getElementById("addition").innerHTML = num1 + num2
+            }
+
+            function subtractnumbers(num1, num2){
+                document.getElementById("subtraction").innerHTML = num1 - num2
+            }
+
+            function multiplynumbers(num1, num2){
+                document.getElementById('multiplication').innerHTML = num1 * num2
+            }
+
+            function dividenumbers(num1, num2){
+                document.getElementById("division").innerHTML = (num1 + "/" + num2 + "=" + num1 / num2)
+            }
+            </script>
+        </body>
+</html>
