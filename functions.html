@@ -11,10 +11,10 @@
             <p id="division"></p>
 
             <script>
-                addnumbers (23,27);
+                document.getElementById("addition").innerHTML = addnumbers (23,27);
                 subtractnumbers (100, 90);
                 multiplynumbers (3, 2);
-                dividenumbers (1000, 4);
+                document.getElementById("division").innerHTML = dividenumbers (1000, 4);
 
             function changetext() {
                 if(document.getElementById("heading").innerHTML=='JavaScript'){
@@ -25,7 +25,7 @@
             }
 
             function addnumbers(num1, num2){
-                document.getElementById("addition").innerHTML = num1 + num2
+                return num1 + num2;
             }
 
             function subtractnumbers(num1, num2){
@@ -37,7 +37,7 @@
             }
 
             function dividenumbers(num1, num2){
-                document.getElementById("division").innerHTML = (num1 + "/" + num2 + "=" + num1 / num2)
+                return num1 / num2;
             }
             </script>
         </body>
